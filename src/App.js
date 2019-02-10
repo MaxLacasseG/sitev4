@@ -10,14 +10,14 @@ import Contact from "./components/Contact";
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Router>
+            <Router>
+                <div className="App">
                     <Route path="/" exact component={Home} />
                     <Route path="/web" exact component={Web} />
                     <Route path="/jeux-videos" exact component={Game} />
                     <Route path="/contact" exact component={Contact} />
-                </Router>
-            </div>
+                </div>
+            </Router>
         );
     }
 }

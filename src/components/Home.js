@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-
+import AnimatedBg from "./home/AnimatedBg";
 export default class Home extends Component {
     render() {
-        return <div className="alert alert-danger">TEST</div>;
+        return (
+            <div className="home">
+                <AnimatedBg />
+            </div>
+        );
     }
 }
