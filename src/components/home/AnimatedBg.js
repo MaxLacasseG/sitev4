@@ -53,7 +53,7 @@ class AnimatedBg extends Component {
     }
 
     render() {
-        return <div className="fondAnim" style={{ backgroundColor: "black", height: "100vh", width: "100vw" }} />;
+        return <div className="fondAnim" />;
     }
 }
 
