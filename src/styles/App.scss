@@ -2,7 +2,57 @@
     padding: 0;
     margin: 0;
 }
+
+a {
+    color: white;
+    &:visited,
+    &:hover,
+    &:active {
+        color: white;
+    }
+}
 .home {
+}
+
+.fondAnim {
+    position: fixed;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     background: url("/img/bg.png");
+}
+.logo-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgba(67, 1, 1, 0.345), rgba(0, 0, 0, 0));
+    flex-direction: column;
+
+    & .logo {
+        width: 50vw;
+        max-width: 50vw;
+        height: auto;
+        filter: drop-shadow(1px 1px 3px rgba(250, 149, 42, 0.55));
+    }
+
+    & .nav {
+        display: flex;
+
+        & .nav-item {
+            padding: 2em;
+            font-size: 2em;
+            font-family: "Nova Flat", cursive;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.708);
+            list-style-type: none;
+
+            &:hover {
+                filter: drop-shadow(4px 4px 10px rgb(255, 119, 0));
+                text-decoration: underline;
+            }
+        }
+    }
 }
