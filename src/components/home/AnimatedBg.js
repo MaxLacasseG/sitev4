@@ -53,7 +53,7 @@ class AnimatedBg extends Component {
     }
 
     render() {
-        return <div className="fondAnim" />;
+        return <div className="fondAnim bg" />;
     }
 }
 
