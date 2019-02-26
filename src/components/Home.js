@@ -19,7 +19,7 @@ export default class Home extends Component {
                             <Link to="/creations">Autres créations</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/bio">Bio</Link>
+                            <Link to="/bio">Me joindre</Link>
                         </li>
                     </ul>
                 </div>

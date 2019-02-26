@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProjectNav from "./navigation/ProjectNav";
 import { webData } from "../data/webProject";
 
 export default class Web extends Component {
@@ -27,13 +28,11 @@ export default class Web extends Component {
         });
         return (
             <div className="bg fullsize">
-                <div className="container p-5">
-                    <div className="row">
-                        <h1>Projets web</h1>
-                    </div>
-                    <div className="row">
+                <div className="d-flex flex-column ">
+                    <div className="align-items-stretch">
                         <div className="col-md-6">{projectList}</div>
                     </div>
+                    <ProjectNav />
                 </div>
             </div>
         );
